@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.hero {
+    background: #007bff;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.section {
+    padding: 50px 20px;
+    background: white;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #343a40;
+    color: white;
+    margin-top: 20px;
+}
