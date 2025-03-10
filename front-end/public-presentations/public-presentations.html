@@ -27,32 +27,66 @@
             <h1>Public Presentations</h1>
         </div>
     </div>
-            <section class="courses">
-                <div class="course">
-                    <h2>Article 1</h2>
-                    <p>Bla bla bla</p>
-                </div>
-            
-                <div class="course">
-                    <h2>Article 2</Article></h2>
-                    <p>Bla bla bla</p>
-                </div>
-            </section>
-            
-        </ul>
+
+    <!-- Public Presentations Section -->
+    <section class="presentations">
+        <!-- Presentation 1 -->
+        <div class="presentation" onclick="toggleDropdown('presentation-1')">
+            <h2>Presentation 1: STEM Education Innovations</h2>
+            <div id="presentation-1" class="dropdown-content">
+                <p>
+                    This presentation discusses the latest innovations in STEM education, focusing on the integration of IoT and 3D printing technologies. 
+                    It highlights how these tools can transform teaching and learning.
+                </p>
+            </div>
+        </div>
+
+        <!-- Presentation 2 -->
+        <div class="presentation" onclick="toggleDropdown('presentation-2')">
+            <h2>Presentation 2: Python in Education</h2>
+            <div id="presentation-2" class="dropdown-content">
+                <p>
+                    This presentation explores the role of Python programming in modern education. 
+                    It demonstrates how Python can be used to teach computational thinking and problem-solving skills.
+                </p>
+            </div>
+        </div>
+
+        <!-- Presentation 3 -->
+        <div class="presentation" onclick="toggleDropdown('presentation-3')">
+            <h2>Presentation 3: Robotics for Environmental Solutions</h2>
+            <div id="presentation-3" class="dropdown-content">
+                <p>
+                    This presentation showcases robotics projects aimed at solving environmental challenges. 
+                    It emphasizes the importance of hands-on learning and innovation in STEM education.
+                </p>
+            </div>
+        </div>
     </section>
-</section>
-<!-- Footer -->
-<footer>
-    <div class="footer-container">
-        <p>&copy; 2025 M. Zainur Rifai. All Rights Reserved.</p>
-        <ul class="footer-links">
-            <li><a href="../contact/contact.html">Contact</a></li>
-            <li><a href="https://linkedin.com/in/zainurrifaim" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-            <li><a href="https://github.com/zainurrifaim" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-            <li><a href="https://twitter.com/zainurrifaim" target="_blank" rel="noopener noreferrer">Twitter</a></li>
-        </ul>
-    </div>
-</footer>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2025 M. Zainur Rifai. All Rights Reserved.</p>
+            <ul class="footer-links">
+                <li><a href="../contact/contact.html">Contact</a></li>
+                <li><a href="https://linkedin.com/in/zainurrifaim" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                <li><a href="https://github.com/zainurrifaim" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                <li><a href="https://twitter.com/zainurrifaim" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Dropdown Functionality -->
+    <script>
+        function toggleDropdown(id) {
+            const dropdown = document.getElementById(id);
+            if (dropdown.style.display === "block") {
+                dropdown.style.display = "none";
+            } else {
+                dropdown.style.display = "block";
+            }
+        }
+    </script>
 </body>
 </html>
