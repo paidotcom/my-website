@@ -83,7 +83,7 @@ nav ul li a.active {
     line-height: 1.6;
 }
 
-/* ===== Courses Section ===== */
+/* ===== Start Courses Section ===== */
 .courses {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -117,6 +117,7 @@ nav ul li a.active {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(255, 255, 255, 0.2);
 }
+/* ===== End Courses Section ===== */
 
 /* Profile Section */
 .profile-container {
@@ -157,7 +158,6 @@ nav ul li a.active {
     color: #ddd;
     line-height: 1.6;
     text-align: justify; /* Justify the text */
-}
 }
 
 /* Information Section */
