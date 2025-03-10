@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses Taught</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" type="image/png" href="../media/favicon-32x32.png"> <!-- For modern browsers -->
+    <link rel="shortcut icon" href="../media/favicon.ico"> <!-- For older browsers -->
+</head>
+<body>
+    <header>
+        <div class="logo">Courses Taught</div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#" class="active">Courses Taught</a></li>
+                <li><a href="../articles/articles.html">Articles</a></li>
+                <li><a href="../projects/projects.html">Projects</a></li>
+                <li><a href="../public-presentations/public-presentations.html">Public Presentations</a></li>
+                <li><a href="../profile/profile.html">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Courses Taught</h1>
+        </div>
+    </div>
+    <section class="courses">
+        <!-- General Chemistry -->
+        <div class="course" onclick="toggleDropdown('general-chemistry')">
+            <h2>General Chemistry</h2>
+            <p>General Chemistry is the study of fundamental principles such as atomic structure, chemical bonding, reactions, stoichiometry, thermodynamics, and kinetics. This serves as the foundation for advanced chemistry topics and is essential for science and engineering students.</p>
+            <ul id="general-chemistry" class="dropdown-content">
+                <li><a href="/front-end/courses-taught/general-chemistry/introduction-to-chemistry.html">1. Introduction to Chemistry</a></li>
+                <li><a href="courses/matter-and-change.html">2. Matter and Change</a></li>
+                <li><a href="courses/measurements.html">3. Measurements</a></li>
+                <li><a href="courses/atomic-structure.html">4. Atomic Structure</a></li>
+                <li><a href="courses/electrons-in-atoms.html">5. Electrons in Atoms</a></li>
+                <li><a href="courses/the-periodic-table.html">6. The Periodic Table</a></li>
+                <li><a href="courses/chemical-nomenclature.html">7. Chemical Nomenclature</a></li>
+            </ul>
+        </div>
+
+        <!-- IoT (Internet of Things) -->
+        <div class="course" onclick="toggleDropdown('iot')">
+            <h2>IoT (Internet of Things)</h2>
+            <p>IoT refers to a network of devices that communicate via the internet, enabling automation in industries such as healthcare, agriculture, and home automation. Key components include sensors, microcontrollers, and cloud computing.</p>
+            <ul id="iot" class="dropdown-content">
+                <li><a href="courses/iot-basics.html">1. IoT Basics</a></li>
+                <li><a href="courses/sensors-and-actuators.html">2. Sensors and Actuators</a></li>
+                <li><a href="courses/cloud-computing.html">3. Cloud Computing</a></li>
+            </ul>
+        </div>
+
+        <!-- Academic Writing -->
+        <div class="course" onclick="toggleDropdown('academic-writing')">
+            <h2>Academic Writing</h2>
+            <p>Academic Writing involves structured, logical, and well-cited communication used in research papers and scholarly articles. It helps students and researchers effectively present their ideas.</p>
+            <ul id="academic-writing" class="dropdown-content">
+                <li><a href="courses/research-papers.html">1. Research Papers</a></li>
+                <li><a href="courses/citation-styles.html">2. Citation Styles</a></li>
+                <li><a href="courses/thesis-writing.html">3. Thesis Writing</a></li>
+            </ul>
+        </div>
+
+        <!-- Science Projects -->
+        <div class="course" onclick="toggleDropdown('science-projects')">
+            <h2>Science Projects</h2>
+            <p>Science Projects allow students to apply scientific concepts through experiments and research. These projects encourage critical thinking, problem-solving, and hands-on STEM learning.</p>
+            <ul id="science-projects" class="dropdown-content">
+                <li><a href="courses/project-planning.html">1. Project Planning</a></li>
+                <li><a href="courses/experiment-design.html">2. Experiment Design</a></li>
+                <li><a href="courses/data-analysis.html">3. Data Analysis</a></li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2025 M. Zainur Rifai. All Rights Reserved.</p>
+            <ul class="footer-links">
+                <li><a href="../contact/contact.html">Contact</a></li>
+                <li><a href="https://linkedin.com/in/zainurrifaim" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                <li><a href="https://twitter.com/zainurrifaim" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Dropdown Functionality -->
+    <script>
+        function toggleDropdown(id) {
+            const dropdown = document.getElementById(id);
+            if (dropdown.style.display === "block") {
+                dropdown.style.display = "none";
+            } else {
+                dropdown.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
