@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <div class="logo">Article</div>
+        <div class="logo">Articles</div>
         <nav>
             <ul>
                 <li><a href="../index.html">Home</a></li>
@@ -27,32 +27,66 @@
             <h1>Articles</h1>
         </div>
     </div>
-            <section class="courses">
-                <div class="course">
-                    <h2>Article 1</h2>
-                    <p>Bla bla bla</p>
-                </div>
-            
-                <div class="course">
-                    <h2>Article 2</Article></h2>
-                    <p>Bla bla bla</p>
-                </div>
-            </section>
-            
-        </ul>
+
+    <!-- Articles Section -->
+    <section class="articles">
+        <!-- Article 1 -->
+        <div class="article" onclick="toggleDropdown('article-1')">
+            <h2>Article 1: The Future of STEM Education</h2>
+            <div id="article-1" class="dropdown-content">
+                <p>
+                    This article explores the future of STEM education, focusing on the integration of IoT and 3D printing technologies. 
+                    It discusses how these innovations can enhance hands-on learning and prepare students for future challenges.
+                </p>
+            </div>
+        </div>
+
+        <!-- Article 2 -->
+        <div class="article" onclick="toggleDropdown('article-2')">
+            <h2>Article 2: The Role of Python in Modern Education</h2>
+            <div id="article-2" class="dropdown-content">
+                <p>
+                    This article highlights the importance of Python programming in modern education. 
+                    It covers how Python can be used to teach computational thinking and problem-solving skills across various disciplines.
+                </p>
+            </div>
+        </div>
+
+        <!-- Article 3 -->
+        <div class="article" onclick="toggleDropdown('article-3')">
+            <h2>Article 3: Environmental Robotics Projects</h2>
+            <div id="article-3" class="dropdown-content">
+                <p>
+                    This article showcases environmental robotics projects led by students. 
+                    It emphasizes the role of robotics in addressing environmental challenges and fostering innovation.
+                </p>
+            </div>
+        </div>
     </section>
-</section>
-<!-- Footer -->
-<footer>
-    <div class="footer-container">
-        <p>&copy; 2025 M. Zainur Rifai. All Rights Reserved.</p>
-        <ul class="footer-links">
-            <li><a href="../contact/contact.html">Contact</a></li>
-            <li><a href="https://linkedin.com/in/zainurrifaim" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-            <li><a href="https://github.com/zainurrifaim" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-            <li><a href="https://twitter.com/zainurrifaim" target="_blank" rel="noopener noreferrer">Twitter</a></li>
-        </ul>
-    </div>
-</footer>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2025 M. Zainur Rifai. All Rights Reserved.</p>
+            <ul class="footer-links">
+                <li><a href="../contact/contact.html">Contact</a></li>
+                <li><a href="https://linkedin.com/in/zainurrifaim" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                <li><a href="https://github.com/zainurrifaim" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                <li><a href="https://twitter.com/zainurrifaim" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Dropdown Functionality -->
+    <script>
+        function toggleDropdown(id) {
+            const dropdown = document.getElementById(id);
+            if (dropdown.style.display === "block") {
+                dropdown.style.display = "none";
+            } else {
+                dropdown.style.display = "block";
+            }
+        }
+    </script>
 </body>
 </html>

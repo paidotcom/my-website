@@ -27,32 +27,57 @@
             <h1>Projects</h1>
         </div>
     </div>
-            <section class="courses">
-                <div class="course">
-                    <h2>Article 1</h2>
-                    <p>Bla bla bla</p>
-                </div>
-            
-                <div class="course">
-                    <h2>Article 2</Article></h2>
-                    <p>Bla bla bla</p>
-                </div>
-            </section>
-            
-        </ul>
+
+    <!-- Projects Section -->
+    <section class="projects">
+        <!-- Project 1 -->
+        <div class="project" onclick="toggleDropdown('project-1')">
+            <h2>Project 1: IoT-Based Smart Classroom</h2>
+            <div id="project-1" class="dropdown-content">
+                <img src="../media/project1.jpg" alt="IoT-Based Smart Classroom">
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project" onclick="toggleDropdown('project-2')">
+            <h2>Project 2: Environmental Monitoring Robot</h2>
+            <div id="project-2" class="dropdown-content">
+                <img src="../media/project2.jpg" alt="Environmental Monitoring Robot">
+            </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project" onclick="toggleDropdown('project-3')">
+            <h2>Project 3: 3D Printing in STEM Education</h2>
+            <div id="project-3" class="dropdown-content">
+                <img src="../media/project3.jpg" alt="3D Printing in STEM Education">
+            </div>
+        </div>
     </section>
-</section>
-<!-- Footer -->
-<footer>
-    <div class="footer-container">
-        <p>&copy; 2025 M. Zainur Rifai. All Rights Reserved.</p>
-        <ul class="footer-links">
-            <li><a href="../contact/contact.html">Contact</a></li>
-            <li><a href="https://linkedin.com/in/zainurrifaim" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-            <li><a href="https://github.com/zainurrifaim" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-            <li><a href="https://twitter.com/zainurrifaim" target="_blank" rel="noopener noreferrer">Twitter</a></li>
-        </ul>
-    </div>
-</footer>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2025 M. Zainur Rifai. All Rights Reserved.</p>
+            <ul class="footer-links">
+                <li><a href="../contact/contact.html">Contact</a></li>
+                <li><a href="https://linkedin.com/in/zainurrifaim" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                <li><a href="https://github.com/zainurrifaim" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                <li><a href="https://twitter.com/zainurrifaim" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Dropdown Functionality -->
+    <script>
+        function toggleDropdown(id) {
+            const dropdown = document.getElementById(id);
+            if (dropdown.style.display === "block") {
+                dropdown.style.display = "none";
+            } else {
+                dropdown.style.display = "block";
+            }
+        }
+    </script>
 </body>
 </html>
